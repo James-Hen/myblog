@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>Simple example - Editor.md examples</title>
+    <link rel="stylesheet" href="../editor.md-master/examples/css/style.css" />
+    <link rel="stylesheet" href="../editor.md-master/css/editormd.css" />
+    <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
+</head>
+    <body>
+        <div id="layout">
+            <header>
+                <h1>Here Comes your Texts</h1>
+            </header>
+            <div id="test-editormd">
+                <textarea style="display:none;">
+###这里可以输入您的markdown文字
+
+##右侧会有即时预览
+
+#你说好玩吗
+
+这样可以说话
+
+**这样可以说好话**
+
+*这样可以说假话*
+
+~~这样可以说坏话~~
+
+-----------------
+上面是一条无耻的分割线
+
+![](../../Pictures/Lincoln.jpg)
+
+>Do not always believe what you see on the internet
+>with a picture and a quote next to it.
+>--Abraham Lincoln
+
+----------------
+
+或许可以这样贴代码
+
+```html
+		<script src="../editor.md-master/examples/js/jquery.min.js"></script>
+        <script src="../editor.md-master/editormd.min.js"></script>
+        <script type="text/javascript">
+```
+
+我还能用TeX写公式
+#### Examples
+
+##### 行内的公式 Inline
+
+$$E=mc^2$$
+
+$$\(\sqrt{3x-1}+(1+x)^2\)$$
+
+$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
+
+$$f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
+
+$$\displaystyle \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }$$
+
+$$\displaystyle \left( \sum\_{k=1}^n a\_k b\_k \right)^2 \leq \left( \sum\_{k=1}^n a\_k^2 \right) \left( \sum\_{k=1}^n b\_k^2 \right)$$
+
+$$\frac{1}{2}=0.5$$
+
+$$\dbinom{n}{k} \binom{n}{k}$$
+
+$$\oint_C x^3\, dx + 4y^2\, dy$$
+
+$$x_{1,2}=\frac{-b\pm\sqrt{\color{Red}b^2-4ac}}{2a}$$
+
+$${\color{Blue}x^2}+{\color{YellowOrange}2x}-{\color{OliveGreen}1}$$
+
+$$\textstyle \sum_{k=1}^N k^2$$
+
+$$\dfrac{ \tfrac{1}{2}[1-(\tfrac{1}{2})^n] }{ 1-\tfrac{1}{2} } = s_n$$
+
+$$\binom{n}{k}$$
+
+$$0+1+2+3+4+5+6+7+8+9+10+11+12+13+14+15+16+17+18+19+20+\cdots$$
+
+$$\textstyle \sum_{k=1}^N k^2$$
+
+$$\int_{1}^{3}\frac{e^3/x}{x^2}\, dx$$
+
+##### 多行公式 Multi line
+
+> \`\`\`math or \`\`\`latex or \`\`\`katex
+
+```math
+f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+```
+
+```math
+\displaystyle
+\left( \sum\_{k=1}^n a\_k b\_k \right)^2
+\leq
+\left( \sum\_{k=1}^n a\_k^2 \right)
+\left( \sum\_{k=1}^n b\_k^2 \right)
+```
+
+```katex
+\displaystyle 
+    \frac{1}{
+        \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+        \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+        1+\frac{e^{-6\pi}}
+        {1+\frac{e^{-8\pi}}
+         {1+\cdots} }
+        } 
+    }
+```
+
+```latex
+f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+```
+                </textarea>
+            </div>
+        </div>
+        <script src="../editor.md-master/examples/js/jquery.min.js"></script>
+        <script src="../editor.md-master/editormd.min.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                    width   : "90%",
+                    height  : 640,
+                    emoji: true,//emoji表情，默认关闭
+                    taskList: true,
+                    tocm: true, // Using [TOCM]
+                    tex: true,// 开启科学公式TeX语言支持，默认关闭
+
+                    flowChart: true,//开启流程图支持，默认关闭
+                    sequenceDiagram: true,//开启时序/序列图支持，默认关闭,
+                    syncScrolling : "single",
+                    path: "../editor.md-master/lib/"
+                });
+                
+                /*
+                // or
+                testEditor = editormd({
+                    id      : "test-editormd",
+                    width   : "90%",
+                    height  : 640,
+                    path    : "../lib/"
+                });
+                */
+            });
+        </script>
+    </body>
+</html>
