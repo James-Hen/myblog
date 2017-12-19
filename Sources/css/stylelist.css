@@ -1,4 +1,4 @@
-body {
+﻿body {
     background-image: url(../../Pictures/mainPageBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,8 +20,11 @@ body {
 
 #selfieabout {
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 10%;
+    left: 50%;
+    margin-left: -85px;
+    z-index: 3;
 }
 
 #mainbox {
@@ -30,18 +33,41 @@ body {
     background-color: #ffffff;
 }
 
-#boxabout {
-    padding: 50px;
-    width: 50%;
+.box-shadow-3 {
+    -webkit-box-shadow: 0 0 150px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0 0 150px rgba(0, 0, 0, 0.50);
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.50);
+}
+
+.obj {
+    padding: 4%;
+    padding-top: 15%;
+    width: 30%;
     position: absolute;
-    top: 30%;
-    height: 70px;
-    left: 30%;
+    top: 25%;
+    height: 100px;
+    margin-left: -19%;
+    left: 50%;
     background-color: #ffffff;
     text-align: center;
     font-family: 'Microsoft JhengHei UI';
-    font-size: 50px;
+    font-size: 25px;
 }
+
+.outer {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.inner {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    -webkit-box-shadow: 50px 50px blue;
+    -moz-box-shadow: 50px 50px blue;
+    box-shadow: 50px 50px blue;
+}  
 
 #ttl {
     text-align: center;
