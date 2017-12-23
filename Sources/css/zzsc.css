@@ -1,6 +1,7 @@
 .content {
+    z-index: 5;
     position: fixed;
-    margin: 0px;
+    width: 100%;
 }
 
 .venus-menu {
@@ -9,7 +10,7 @@
 
 .bggjgjjgjywrturuwehegqeq410004 {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .bggjgjjgjywrturuwehegqeq410005 {
@@ -19,27 +20,27 @@
 
 .bggjgjjgjywrturuwehegqeq410006 {
     float: left;
-    margin: 10px 10px 10px 0;
+    margin: 10px 10px 10px 0
 }
 
 .bggjgjjgjywrturuwehegqeq410007 {
-    float: left;
+    float: left
 }
 
 .bggjgjjgjywrturuwehegqeq410008 {
-    float: right;
+    float: right
 }
 
 .bggjgjjgjywrturuwehegqeq410009 {
-    text-align: center;
+    text-align: center
 }
 
 .bggjgjjgjywrturuwehegqeq410010 {
-    text-align: right;
+    text-align: right
 }
 
 .bggjgjjgjywrturuwehegqeq410011 {
-    text-align: left;
+    text-align: left
 }
 
 .bggjgjjgjywrturuwehegqeq410012 {
@@ -110,8 +111,7 @@ blockquote.bggjgjjgjywrturuwehegqeq410016 {
     float: left;
     font-family: 'Open Sans', sans-serif;
     list-style: none;
-    background: rgba(142, 203, 141, 0.80);
-    box-shadow: 0 1px 3px #dedede;
+    background: #fff;
 }
 
     .venus-menu li {

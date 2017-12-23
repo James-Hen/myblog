@@ -7,6 +7,12 @@
 
     <script type="text/javascript" src="js/maps.js"></script>
     <script type="text/javascript" src="js/google.js"></script>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
 
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen">
     <link rel="stylesheet" href="inc/colorbox.css" type="text/css" media="screen">
@@ -30,10 +36,13 @@
 <body>
     <div class="container">
         <hr id="firsthr" noshade="true" color="#8ECB8D" size="5" />
+        <div id="headcont">
             <h1>线性时间轴</h1>
-        
-        <hr id="firsthr" noshade="true" color="#8ECB8D" size="5" />
             <p class="lead">在这里可以按时间浏览博文<br />说不定有什么意外的发现哦！</p>
+        </div>
+            
+        <hr id="firsthr" noshade="true" color="#8ECB8D" size="5" />
+            
 
         <div id="timelineContainer" class="timelineContainer">
 
@@ -44,6 +53,17 @@
             <div class="timelineMajor">
 
                 <h2 class="timelineMajorMarker"><span>2017</span></h2>
+                <dl class="timelineMinor">
+                    <dt id="20171223"><a>如何算出手机密码</a></dt>
+                    <dd class="timelineEvent" id="20171223EX" style="display:none;">
+                        <h3>2017年12月23日</h3>
+                        <p>
+                            绿彬琰不小心把他的密码信息透露出来<br />
+                            让我们把他手机搞到手！
+                        </p>
+                        <br class="clear">
+                    </dd><!-- /.timelineEvent -->
+                </dl><!-- /.timelineMinor -->
                 <dl class="timelineMinor">
                     <dt id="20171220"><a>超好用的Markdown文字！</a></dt>
                     <dd class="timelineEvent" id="20171220EX" style="display:none;">
